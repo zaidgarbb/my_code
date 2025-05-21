@@ -10,12 +10,13 @@ import numpy as np
 import random
 
 # ✅ CONFIGURATION
-BASE_PATH = './BraTS_FixMatch'
+BASE_PATH = '/home/ubuntu/semi_supervised_fixmatch_all_scripts/BraTS_FixMatch/BraTS_FixMatch'
 LABELED_IMAGES_DIR = os.path.join(BASE_PATH, 'labeled', 'images')
 LABELED_MASKS_DIR = os.path.join(BASE_PATH, 'labeled', 'masks')
 UNLABELED_IMAGES_DIR = os.path.join(BASE_PATH, 'unlabeled', 'images')
 CHECKPOINT_PATH = os.path.join(BASE_PATH, 'fixmatch_model.pth')
 LOG_FILE = os.path.join(BASE_PATH, 'training.log')
+
 
 BATCH_SIZE = 16
 EPOCHS = 30
